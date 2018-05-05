@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<style>
+
+	body {
+	   font-family: "Trebuchet MS", sans-serif;
+	}
+
+	.sidenav {
+	   height: 100%;
+	   width: 1%;
+	   position: fixed;
+	   z-index: 1;
+	   top: 0;
+	   left: 0;
+	   background-image: url(./green_dust_scratch.png);
+	   overflow-x: hidden;
+	   padding-top: 0%;
+     -webkit-transition: width 2s;
+     transition-duration: 1s;
+     transition-delay: 0.2s;
+	}
+  #.sidenav {-webkit-transition-timing-function: ease;}
+  .sidenav:hover {
+    width: 10%;
+  }
+
+	.sidenav a {
+	   padding: 6px 8px 6px 16px;
+	   text-decoration: none;
+	   font-size: 25px;
+	   color: #000000;
+	   display: block;
+	}
+
+	.sidenav a:hover {
+	   color: #ffffff;
+	}
+
+	.main {
+		margin-left: 20%; /* Same as the width of the sidenav */
+		margin-right: 20%;
+		font-size: 20px; /* Increased text to enable scrolling */
+		padding: 0px 10px;
+	}
+
+	.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: black;
+    text-align: center;
+	font-size: 11px;
+	}
+
+	@media screen and (max-height: 450px) {
+	   .sidenav {padding-top: 15px;}
+	   .sidenav a {font-size: 18px;}
+	}
+
+  h1 {
+    background-color: rgb(200,200,200,0.5);
+    font-weight: 900;
+    font-family: Chalkduster, fantasy;
+    font-variant: small-caps;
+  }
+
+  p {
+    background-color: rgb(220,220,220,0.5);
+  }
+
+  .magicbutton {
+    font-family: "Trebuchet MS", serif;
+    font-variant: small-caps;
+    font-size: 25px;
+    padding: 10px 40px;
+    border-radius: 6px;
+    background-color: white;
+    color: green;
+    border: 2px solid green;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    cursor: pointer;
+  }
+
+  .magicbutton:hover {
+    background-image: url(./green_dust_scratch.png);
+    color: white;
+  }
+
+  .picinput {
+    background-color: white;
+  }
+
+	</style>
+	<title></title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body background="funky-lines.png">
+	<div class="sidenav">
+		<a href="javascript:alert('Because%20why%20not?');">Why?</a>
+    <a onclick="alert('You will be directed to a different page');" href="https://cloud.google.com/vision/">How?</a>
+	</div>
+	<div class="main">
+		<center>
+		<h1>Get that Text/Landmark</h1>
+		<p>Do you want to copy text but you can't highlight it? Is it in a jpeg or png? Then don't worry, we will give you a easy copiable version of the text you want!</p>
+		<form action="">
+			<p>Please specify a file, or a set of files:<br>
+			<input class="picinput" name="datafile" size="40" type="file"></p>
+			<div>
+				<!--<input class="magicbutton" type="submit" value="Let the magic happen">-->
+        <button class="magicbutton">Let the magic happen <i class="fa fa-angle-double-right" style="font-size: 20px;"></i></button>
+			</div>
+		</form>
+		<div class="footer">
+  			<p1>Created by: then00bs, Southampton 2018</p1>
+		</div>
+	</div>
+</body>
+</html>
